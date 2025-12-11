@@ -17,4 +17,28 @@ All components are presented in a minimal, reproducible form consistent with the
 
 ## 📁 Repository Structure
 
+MIDL2026-TopoConMP/
+│
+├── src/
+│ ├── multipersistence.py # Compute (β0, β1, activated pixels) grids
+│ ├── topo_encoder.py # CNN topology encoder
+│ ├── image_encoder.py # Swin-T image encoder
+│ ├── fusion.py # Fusion block + classifier
+│ ├── supcon_loss.py # Supervised contrastive loss
+│ └── train_demo.py # Minimal runnable demo
+│
+├── requirements.txt
+└── README.md
 
+
+---
+
+## 🔧 Installation
+
+Install dependencies:
+
+```bash
+pip install -r requirements.txt
+
+
+python src/train_demo.py
