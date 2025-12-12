@@ -15,30 +15,45 @@ All components are presented in a minimal, reproducible form consistent with the
 
 ---
 
-## 📁 Repository Structure
 
+##  Installation
+
+### 1) Create a new environment
+
+```bash
+conda create -n topoconmp python=3.10 -y
+conda activate topoconmp
+```
+
+### 2) Install dependencies
+pip install -r requirements.txt
+
+### 3) Quick Start (No Dataset Required)
+Run the minimal demo to verify that the full architecture works end-to-end:
+
+python src/train_demo.py
+
+## Datasets
+Experiments were performed on three dermoscopic datasets:
+- **DermaMNIST**
+- **MILK-10K**
+- **PAD-UFES-20**
+
+## Repository Structure
+
+```
 MIDL2026-TopoConMP/
 │
 ├── src/
-│ ├── multipersistence.py # Compute (β0, β1, activated pixels) grids
-│ ├── topo_encoder.py # CNN topology encoder
-│ ├── image_encoder.py # Swin-T image encoder
-│ ├── fusion.py # Fusion block + classifier
-│ ├── supcon_loss.py # Supervised contrastive loss
-│ └── train_demo.py # Minimal runnable demo
+│   ├── multipersistence.py      # Compute multipersistence (β0, β1, activated pixels)
+│   ├── topo_encoder.py          # CNN topology encoder
+│   ├── image_encoder.py         # Swin-T image encoder
+│   ├── fusion.py                # Fusion block + classifier
+│   ├── supcon_loss.py           # Supervised contrastive loss
+│   └── train_demo.py            # Minimal runnable demo (no dataset required)
 │
 ├── requirements.txt
 └── README.md
+```
 
 
----
-
-## 🔧 Installation
-
-Install dependencies:
-
-```bash
-pip install -r requirements.txt
-
-
-python src/train_demo.py
