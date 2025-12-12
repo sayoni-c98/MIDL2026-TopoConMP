@@ -56,4 +56,13 @@ MIDL2026-TopoConMP/
 └── README.md
 ```
 
+## Acknowledgements
+
+We thank the creators and maintainers of the following resources:
+
+- **MedMNIST**, **ISIC Archive**, and **PAD-UFES-20** for providing open dermoscopic datasets  
+- **PyTorch** and **Torchvision** teams for Swin Transformer implementations and pretrained weights  
+- The authors of **Supervised Contrastive Learning** for foundational contrastive learning methodology  
+- The medical imaging and computational topology communities for their continued contributions to open research
+
 
